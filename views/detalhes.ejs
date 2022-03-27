@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_detalhes.css">
+    <title>Adicionar</title>
+</head>
+<body>
+    <section class="top">
+        <input type="image" src="/img/bt_principal.png" width="100" height="100" alt="Submit"/>
+        <h1>Pokémon</h1>
+        <img id="img_top" src="/img/pokeball.png" height="90" width="90"> 
+
+    </section>
+
+    <section class="nav" > 
+
+        <div id="light">      
+            <img id="light_r" src="/img/red.png" height="30" width="30"> 
+            <img id="light_y" src="/img/yellow.png" height="30" width="30"> 
+            <img id="light_g" src="/img/green.png" height="30" width="30"> 
+           
+        </div>
+
+    </section>
+
+    <section class="container">
+
+        <form action="/detalhes/:id" method="get">
+
+            <section class="container_img">
+
+                <div id="img"> 
+                    
+                    <img src="<%=pokemon.imagem%>" height="400" width="400">
+                    <h2><%=pokemon.numero%></h2>
+                    <h2><%=pokemon.nome%></h2> 
+                    <h2><%=pokemon.tipo%></h2>   
+                </div>
+    
+                <section class="container_infopoke">              
+                        
+                    <label id="label"><b>Descrição:</b></label>
+                    <p><%=pokemon.descricao%></p>                       
+                    <label id="label"><b>Altura:</b></label>
+                    <p><%=pokemon.altura%></p>                       
+                    <label id="label"><b>Peso:</b></label>
+                    <p><%=pokemon.peso%></p>    
+                    <label id="label"><b>Categoria:</b></label>
+                    <p><%=pokemon.categoria%></p> 
+                    <label id="label"><b>Habilidades:</b></label>
+                    <p><%=pokemon.habilidade%></p> 
+                    <p><%=pokemon.habilidade2%></p>                    
+                    <p><%=pokemon.habilidade3%></p>  
+                    
+                </section>               
+    
+                </section>       
+    
+            </section>
+    
+            <section class="bt">
+                <form action="/cadastro/:id" method="get">
+                    <button id="bt" type="submit">Editar</button>
+                </form>
+
+                <form action="/" method="get">
+                    <button id="bt" type="submit">Voltar</button>
+                </form>               
+
+            </section>        
+
+        </form>
+
+    </section>
+
+</section>  
+
+    
+</body>
+
+</html>

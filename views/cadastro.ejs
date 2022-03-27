@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_cadastro.css">
+    <title>Adicionar</title>
+</head>
+<body>
+    <section class="top">
+        <input type="image" src="/img/bt_principal.png" width="100" height="100" alt="Submit"/>
+        <h1>Cadastrar</h1>
+        <img id="img_top" src="/img/pokeball.png" height="90" width="90"> 
+
+    </section>
+
+    <section class="nav" > 
+
+        <div id="light">      
+            <img id="light_r" src="/img/red.png" height="30" width="30"> 
+            <img id="light_y" src="/img/yellow.png" height="30" width="30"> 
+            <img id="light_g" src="/img/green.png" height="30" width="30"> 
+           
+        </div>
+
+    </section>
+
+    <section class="container">
+
+        <section class="container_img">
+
+            <div id="img"> 
+                <img src="/img/img_ad.jpg" height="400" width="400"> 
+            </div>   
+            
+            <form action="/ad" method="post">
+
+                <div class="infopoke">
+                    
+                    <label id="label">Número:</label>
+                    <input id="input_ad" type="text" name="numero">                     
+                    <label id="label">Nome:</label>
+                    <input id="input_ad" type="text" name="nome">                     
+                    <label id="label">Tipo:</label>
+                    <input id="input_ad" type="text" name="tipo">                     
+                    <label id="label">Descrição: </label>
+                    <textarea id="input_ad" type="text" name="descricao"></textarea>                       
+                    <label id="label">Altura:</label>
+                    <input id="input_ad" type="text" name="altura">                       
+                    <label id="label">Peso:</label>
+                    <input id="input_ad" type="text" name="peso">    
+                    <label id="label">Categoria:</label>
+                    <input id="input_ad" type="text" name="categoria">  
+                    <label id="label">Habilidade 1:</label>
+                    <input id="input_ad" type="text" name="habilidade1">  
+                    <label id="label">Habilidade 2:</label>
+                    <input id="input_ad" type="text" name="habilidade2">               
+                    <label id="label">Habilidade 3:</label>
+                    <input id="input_ad" type="text" name="habilidade3"> 
+                    <label id="label">link da imagem:</label>
+                    <input id="input_ad" type="text" name="imagem">   
+                    
+                    <div id="bt_container">
+
+                        <button id="bt1" type="submit" name="salvar">Salvar</button>     
+                        <button id="bt2" type="reset" name="apagar">Apagar</button>
+
+                        <form action="/" method="get">
+
+                            <button id="bt3" type="submit" >Voltar</button>
+
+                        </form>                           
+    
+                    </div>   
+                    
+    
+                </div>    
+
+            </form>
+
+        </section>
+
+    </section>
+
+</section>  
+
+    
+</body>
+
+</html>
